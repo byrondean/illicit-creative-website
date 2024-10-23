@@ -23,14 +23,16 @@ body {
 
 /* Header / Hero Section */
 header {
-    height: 100vh; /* Changed from 115vh to 100vh for better fit */
-    background: url('images/Illicit_logo_zlatni_high_res.png') no-repeat center center/cover;
+    height: 100vh; /* Height of the header */
+    background: url('images/Illicit_logo_zlatni_high_res.png') no-repeat top left; /* Changed to top left */
+    background-size: auto; /* Maintain original size, or adjust as needed */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Centering content */
+    align-items: center; /* Centering content */
     text-align: center;
     padding: 20px; /* Added padding for smaller screens */
 }
+
 
 .hero-content h1 {
     font-size: 3rem;
