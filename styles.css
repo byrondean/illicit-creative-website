@@ -45,8 +45,9 @@ header {
 
 .cta-buttons {
     display: flex;
-    flex-direction: column; /* Change to column on mobile */
-    align-items: center; /* Center buttons */
+    flex-wrap: wrap; /* Allow buttons to wrap if necessary */
+    justify-content: center; /* Center buttons horizontally */
+    align-items: center; /* Center buttons vertically */
 }
 
 .cta-buttons a {
@@ -59,8 +60,20 @@ header {
     transition: background 0.3s;
 }
 
+/* Media Query for mobile adjustments */
+@media (max-width: 768px) {
+    .cta-buttons {
+        flex-direction: row; /* Change to row on mobile devices */
+    }
+
+    .cta-buttons a {
+        flex: 1; /* Allow buttons to grow equally */
+        min-width: 150px; /* Ensure a minimum width to prevent squeezing */
+    }
+}
+
 .cta-buttons a:hover {
-    background-color: #7c622b;
+    background-color: #7c622b; /* Change background on hover */
 }
 
 /* Events Section */
