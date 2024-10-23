@@ -155,7 +155,7 @@ h4 {
 /* Optional: Ensure iframe is responsive */
 .playlist-section iframe {
     max-width: 100%; /* Ensures the iframe doesn't overflow on small screens */
-    height: 352px; /* Keep the height consistent */
+    height: 800px; /* Keep the height consistent */
     border-radius: 12px;
     border: none; /* Removes default border for cleaner look */
 }
