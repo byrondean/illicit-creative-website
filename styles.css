@@ -16,19 +16,20 @@
 
 body {
     font-family: 'Hanson', sans-serif; /* Change to Hanson Bold */
-    line-height: 3;
+    line-height: 1.6; /* Adjusted for better readability */
     background-color: #1E4B54;
     color: #D9A840;
 }
 
 /* Header / Hero Section */
 header {
-    height: 115vh;
+    height: 100vh; /* Changed from 115vh to 100vh for better fit */
     background: url('images/Illicit_logo_zlatni_high_res.png') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 20px; /* Added padding for smaller screens */
 }
 
 .hero-content h1 {
@@ -40,6 +41,12 @@ header {
     font-size: 1.2rem;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.cta-buttons {
+    display: flex;
+    flex-direction: column; /* Change to column on mobile */
+    align-items: center; /* Center buttons */
 }
 
 .cta-buttons a {
@@ -176,4 +183,59 @@ footer a {
 
 footer a:hover {
     color: #1E4B54;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    header {
+        height: auto; /* Allow header height to adjust */
+        padding: 40px 20px; /* Add some padding */
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem; /* Smaller title on mobile */
+    }
+
+    .hero-content p {
+        font-size: 1rem; /* Smaller paragraph text on mobile */
+    }
+
+    .cta-buttons {
+        flex-direction: column; /* Stack buttons vertically on mobile */
+    }
+
+    .cta-buttons a {
+        width: 100%; /* Make buttons full-width */
+        text-align: center; /* Center text in buttons */
+    }
+
+    .container {
+        width: 95%; /* Use more width on mobile */
+    }
+
+    h2 {
+        font-size: 2rem; /* Smaller headings on mobile */
+    }
+
+    .event-card {
+        padding: 15px; /* Smaller padding on mobile */
+    }
+
+    .team {
+        flex-direction: column; /* Stack team members vertically on mobile */
+        align-items: center; /* Center team members */
+    }
+
+    .team-member {
+        margin-bottom: 20px; /* Space between team members */
+    }
+
+    .team-member img {
+        width: 120px; /* Smaller images on mobile */
+        height: 120px;
+    }
+
+    .playlist-section iframe {
+        height: 300px; /* Smaller height for iframe on mobile */
+    }
 }
