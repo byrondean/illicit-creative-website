@@ -1,0 +1,179 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Importing Hanson Bold Font */
+@font-face {
+    font-family: 'Hanson';
+    src: url('fonts/Hanson-Bold_HR.woff2') format('woff2'); /* Adjust the path if necessary */
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Hanson', sans-serif; /* Change to Hanson Bold */
+    line-height: 3;
+    background-color: #1E4B54;
+    color: #D9A840;
+}
+
+/* Header / Hero Section */
+header {
+    height: 115vh;
+    background: url('images/Illicit_logo_zlatni_high_res.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cta-buttons a {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #D9A840;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background 0.3s;
+}
+
+.cta-buttons a:hover {
+    background-color: #7c622b;
+}
+
+/* Events Section */
+#events {
+    padding: 100px 20px;
+    background-color: #222;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+.event-card {
+    background-color: #333; /* Example background color for the event card */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.buy-tickets {
+    display: inline-block; /* Makes the anchor tag behave like a button */
+    padding: 10px 20px;   /* Adds padding to the button */
+    background-color: #1E4B54; /* Button background color */
+    color: white;         /* Text color */
+    text-decoration: none; /* Removes underline */
+    border-radius: 25px;  /* Rounds the corners */
+    transition: background 0.3s; /* Adds a smooth transition on hover */
+    margin-top: 10px;     /* Adds space above the button */
+}
+
+.buy-tickets:hover {
+    background-color: #7c622b; /* Changes background color on hover */
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+/* About Us */
+#about {
+    padding: 60px 20px;
+    background-color: #111;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+/* Playlist Section */
+.playlist-section {
+    text-align: center;
+    margin: 40px 0; /* Adds some space around the playlist section */
+}
+
+.playlist-section h2 {
+    color: #fff; /* Set your preferred text color */
+    margin-bottom: 20px;
+    font-family: 'Hanson', sans-serif; /* Use your custom font */
+    font-size: 24px;
+}
+
+/* Optional: Ensure iframe is responsive */
+.playlist-section iframe {
+    max-width: 100%; /* Ensures the iframe doesn't overflow on small screens */
+    height: 352px; /* Keep the height consistent */
+    border-radius: 12px;
+    border: none; /* Removes default border for cleaner look */
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    border-top: 1px solid #333;
+}
+
+footer a {
+    color: #1E4B54;
+    text-decoration: bold;
+}
+
+footer a:hover {
+    color: #1E4B54;
+}
